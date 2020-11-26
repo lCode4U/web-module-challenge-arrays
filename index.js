@@ -76,11 +76,9 @@ function is31Flavors(Array) {
     }
 
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+
     /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-    Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
-Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
+   
     Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
 
     Use the addFlavor function below to do the following:
@@ -93,15 +91,15 @@ Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They 
     */
 
 
-function addFlavor( /*your code here*/ ) {
-    /*your code here*/
+function addFlavor( Array ) {
+    arr.unshift()
 }
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
-    Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
+   
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
-    Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
+    
 
     Use the removeLastFlavor function below to do the following:
         1. Receive an array
@@ -134,13 +132,8 @@ function getFlavorByIndex( /*your code here*/ ) {
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
-    As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
-As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
-    As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
-    as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that single flavor from the array.  
-as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that single flavor from the array.  
-    as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that single flavor from the array.  
-
+    
+As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that single flavor from the array.  
     Use the removeFlavorByName function below to do the following:
         1. Receive an array
         2. Receive a flavor as a string
@@ -161,16 +154,11 @@ function removeFlavorByName( /*your code here*/ ) {
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
-    July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
+    
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
-    July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
-    Your task is to write a function that checks every item in the array for a string and returns a new array called filteredArray with only the values 
 Your task is to write a function that checks every item in the array for a string and returns a new array called filteredArray with only the values 
-    Your task is to write a function that checks every item in the array for a string and returns a new array called filteredArray with only the values 
-    that contain the received string. This would allow you to be able to filter for "Vanilla", "Sherbet", "Lemon" etc. when different holidays roll around 
 that contain the received string. This would allow you to be able to filter for "Vanilla", "Sherbet", "Lemon" etc. when different holidays roll around 
-    that contain the received string. This would allow you to be able to filter for "Vanilla", "Sherbet", "Lemon" etc. when different holidays roll around 
-    by passing in those specific strings.
+by passing in those specific strings.
 
     Use the filterByWord function below to do the following:
         1. Receive an array
