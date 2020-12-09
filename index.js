@@ -46,7 +46,7 @@ Use the copy function below to do the following:
 */
 
 function copy(array) {
-    const copy = 'array.map';
+    return [...array]
     return array;
     
    
@@ -69,7 +69,7 @@ copy(originalFlavors);
 function is31Flavors(Array) {
     if (Array.length === 31) {
         return true;
-        elseif 
+    }else {
     return false;
 
       }
@@ -91,9 +91,11 @@ function is31Flavors(Array) {
     */
 
 
-function addFlavor( Array ) {
-    arr.unshift()
+function addFlavor(array, flavorString) {
+    array.unshift(flavorString);
+    return array;
 }
+addFlavor(originalFlavors, 'Rainbow Sherbert');
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -109,10 +111,11 @@ Houston, we have a problem! There are now 32 flavors in the originalFlavors arra
         For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
     */
 
-function removeLastFlavor( /*your code here*/ ) {
-    /*your code here*/
+function removeLastFlavor(array) {
+    array.pop();
+    return array
 }
-
+removeLastFlavor(originalFlavors);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -126,10 +129,10 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex( /*your code here*/ ) {
-    /*your code here*/
+function getFlavorByIndex(array,num ) {
+    return array[num];
 }
-
+//getFlavorByIndex();
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
     
@@ -140,17 +143,15 @@ As corporate wants to add more and more flavors to their lineup, they've realize
         3. Remove the received flavor from the received array
         4. Return the resulting array that now contains one less flavor
 
-        For example: running removeFlavorByName(originalFlavors, "Rocky Road") would return an array with the a length of 30 because Rocky Road would have been removed. 
-    For example: running removeFlavorByName(originalFlavors, "Rocky Road") would return an array with the a length of 30 because Rocky Road would have been removed. 
-        For example: running removeFlavorByName(originalFlavors, "Rocky Road") would return an array with the a length of 30 because Rocky Road would have been removed. 
-
+        For example: running removeFlavorByName(originalFlavors, "Rocky Road") would return an array with the a length of 30 because Rocky Road would have been removed.  
         HINT: You can use .splice() for this
     */
 
-function removeFlavorByName( /*your code here*/ ) {
-    /*your code here*/
+function removeFlavorByName(array,flavor) {
+    array.splice('flavor');
+    return array;
 }
-
+removeFlavorByName(originalFlavors, 'Rocky Road');
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -172,17 +173,16 @@ by passing in those specific strings.
         HINT - you can use the .includes method to help you solve this
 
         DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
-    DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
-        DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
+    
     */
 
-function filterByWord( /*your code here*/ ) {
-    /*your code here*/
+function filterByWord(array, string) {
+    console.log(array.includes('string'));
+
 }
 
 
-/* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/
-/* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/
+
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/
 
 /* STRETCH 1: Write a function that returns the average number of words in an array. You should be able to use this function for any array, but can test with originalFlavors.
@@ -203,13 +203,12 @@ function getAverageWordLength( /*code here*/ ) {
 
 
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪
-    Baskin Robins now offers new flavors, seasonal flavors, and even regional flavors. Write a function that will randomly select a total of 31 flavors 
-Baskin Robins now offers new flavors, seasonal flavors, and even regional flavors. Write a function that will randomly select a total of 31 flavors 
+    
     Baskin Robins now offers new flavors, seasonal flavors, and even regional flavors. Write a function that will randomly select a total of 31 flavors 
     from originalFlavors, currentFlavors, seasonalFlavors, and regionalFlavors and store it in an array called randomFlavors.
 
     Use the getRandomFlavors function and new arrays below to do the following:
-        1. Receive the four arrays with all the differnet flavors (originalFlavors is above, the others are below)
+        1. Receive the four arrays with all the different flavors (originalFlavors is above, the others are below)
         2. Randomly pick flavors from all four arrays
         3. Return a new array called randomFlavors that has a lenght of 31
 
