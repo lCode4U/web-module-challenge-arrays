@@ -210,7 +210,7 @@ function getAverageWordLength( /*code here*/ ) {
     Use the getRandomFlavors function and new arrays below to do the following:
         1. Receive the four arrays with all the different flavors (originalFlavors is above, the others are below)
         2. Randomly pick flavors from all four arrays
-        3. Return a new array called randomFlavors that has a lenght of 31
+        3. Return a new array called randomFlavors that has a length of 31
 
         For example: getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors) might return ["Strawberry Cheesecake", "Eggnog,"..."Chocolate"].
     */
